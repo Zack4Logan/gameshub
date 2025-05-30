@@ -1,14 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { JuegosDataService } from '../../services/juegos-data.service';
 
 @Component({
   selector: 'app-estadisticas',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './estadisticas.component.html',
-  styleUrl: './estadisticas.component.css'
+  styleUrls: ['./estadisticas.component.css']
 })
-export class EstadisticasComponent {
+export class EstadisticasComponent implements OnInit {
+  totalJuegos: number = 0;
+  juegosGratis: number = 0;
+  juegosPago: number = 0;
+  mejorJuego: any = null;
+  promedioPrecio: number = 0;
 
+  constructor(private juegosService: JuegosDataService) {}
+
+  ngOnInit(): void {
+    this.juegosService.getEstadisticas().subscribe(est => {
+      this.totalJuegos = est.totalJuegos;
+      this.juegosGratis = est.juegosGratis;
+      this.juegosPago = est.juegosPago;
+      this.mejorJuego = est.mejorRating;
+      this.promedioPrecio = est.promedioPrecio;
+    });
+  }
 }
+
 
 /*
 RESPUESTAS PARTE 4.1:

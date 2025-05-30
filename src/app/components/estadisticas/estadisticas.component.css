@@ -1,0 +1,55 @@
+.estadisticas-juegos {
+  background: var(--gradient-card);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(107, 70, 193, 0.2);
+  animation: fadeIn 0.6s ease-out;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.estadisticas-juegos h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.estadisticas-juegos ul {
+  list-style: none;
+  padding-left: 0;
+  color: var(--text-secondary);
+}
+
+.estadisticas-juegos li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.estadisticas-juegos li::before {
+  content: "🎮";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(2px);
+  font-size: 1rem;
+}
+
+.estadisticas-juegos b {
+  color: var(--text-primary);
+}
+
+.estadisticas-juegos span {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.estadisticas-juegos .currency {
+  color: var(--success-color);
+}

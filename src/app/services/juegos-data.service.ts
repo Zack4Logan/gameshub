@@ -3,6 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject, map } from 'rxjs';
 import { Juego } from '../interfaces/juego.interface';
 
+
+export interface Estadisticas {
+
+  totalJuegos: number;
+  juegosGratis: number;
+  juegosPago: number;
+  mejorRating: { nombre: string; rating: number } | null;
+  promedioPrecio: number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -84,6 +94,46 @@ export class JuegosDataService {
         .sort((a, b) => new Date(b.fechaLanzamiento).getTime() - new Date(a.fechaLanzamiento).getTime())
         .slice(0, limite)
       )
+    );
+
+  }
+
+// Método 1: Obtener juegos dentro de un rango de precios
+  getJuegosPorPrecio(min: number, max: number): Observable<Juego[]> {
+    return this.juegos$.pipe(
+      map(juegos =>
+        juegos.filter(juego => juego.precio >= min && juego.precio <= max)
+      )
+    );
+  }
+
+  // Método 2: Obtener estadísticas de los juegos
+  getEstadisticas(): Observable<Estadisticas> {
+    return this.juegos$.pipe(
+      map(juegos => {
+        const totalJuegos = juegos.length;
+        const juegosGratis = juegos.filter(juego => juego.esGratis).length;
+        const juegosPago = totalJuegos - juegosGratis;
+
+        // Encontrar el juego con mejor rating
+        const mejor = juegos.reduce((prev, curr) =>
+          prev.rating > curr.rating ? prev : curr, juegos[0]
+        );
+
+        // Calcular promedio de precios solo de los juegos de pago
+        const juegosDePago = juegos.filter(juego => !juego.esGratis);
+        const promedioPrecio = juegosDePago.length > 0
+          ? juegosDePago.reduce((suma, juego) => suma + juego.precio, 0) / juegosDePago.length
+          : 0;
+
+        return {
+          totalJuegos,
+          juegosGratis,
+          juegosPago,
+          mejorRating: mejor ? { nombre: mejor.nombre, rating: mejor.rating } : null,
+          promedioPrecio
+        };
+      })
     );
   }
 }
