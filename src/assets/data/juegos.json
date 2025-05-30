@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "Fortnite",
-      "imagen": "https://cdn2.unrealengine.com/fortnite-og-social-share-1920x1080-685342852.jpg",
+      "imagen": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/fortnite/2x1_NSwitch_Fortnite_20250502.jpg",
       "categoria": "Battle Royale",
       "desarrollador": "Epic Games",
       "fechaLanzamiento": "2017-07-25",
@@ -107,7 +107,7 @@
     {
       "id": 4,
       "nombre": "Valorant",
-      "imagen": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3f072336e3f3ade4/63096d7be4a8c30e088e7720/Valorant_2022_E5A2_PlayVALORANT_ContentStackThumbnail_1200x625_MB01.png",
+      "imagen": "https://livecards.net/i/51296.png?v=0",
       "categoria": "FPS",
       "desarrollador": "Riot Games",
       "fechaLanzamiento": "2020-06-02",
@@ -141,7 +141,7 @@
     {
       "id": 5,
       "nombre": "Genshin Impact",
-      "imagen": "https://genshin.hoyoverse.com/_nuxt/img/home-poster-5th.59eb9e9.jpg",
+      "imagen": "https://image.api.playstation.com/vulcan/ap/rnd/202408/2010/6e7d87fef87405e9925e810a1620df04c3b98c2086711336.png",
       "categoria": "RPG",
       "desarrollador": "miHoYo",
       "fechaLanzamiento": "2020-09-28",
@@ -175,7 +175,7 @@
     {
       "id": 6,
       "nombre": "FIFA 24",
-      "imagen": "https://media.contentapi.ea.com/content/dam/ea/fc/fc-24/images/2023/07/fc24-ultimate-edition-standard-kylian-mbappe.jpg.adapt.crop16x9.1455w.jpg",
+      "imagen": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0817/4248a0d1a669210e5caf5174eda176c7883be2c9089fa106.png",
       "categoria": "Sports",
       "desarrollador": "EA Sports",
       "fechaLanzamiento": "2023-09-29",
@@ -209,7 +209,7 @@
     {
       "id": 7,
       "nombre": "Free Fire",
-      "imagen": "https://ffwebsite.garena.com/id/wp-content/uploads/sites/12/2021/12/thumb.jpg",
+      "imagen": "https://i.scdn.co/image/ab67616d0000b273c72fc87f92c0e770bcc25ce7",
       "categoria": "Battle Royale",
       "desarrollador": "Garena",
       "fechaLanzamiento": "2017-12-08",
@@ -277,7 +277,7 @@
     {
       "id": 9,
       "nombre": "Counter-Strike 2",
-      "imagen": "https://cdn.cloudflare.steamstatic.com/apps/csgo/images/csgo_react/cs2/header.png",
+      "imagen": "https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg",
       "categoria": "FPS",
       "desarrollador": "Valve",
       "fechaLanzamiento": "2023-09-27",
@@ -311,7 +311,7 @@
     {
       "id": 10,
       "nombre": "Apex Legends",
-      "imagen": "https://media.contentapi.ea.com/content/dam/apex-legends/common/articles/apex-legends-ignite-launch/apex-section-bg-xl.jpg.adapt.1920w.jpg",
+      "imagen": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2813/6b9d6917931f6b46f1e6d537f817840b0ade39d7efce3259.png",
       "categoria": "Battle Royale",
       "desarrollador": "Respawn Entertainment",
       "fechaLanzamiento": "2019-02-04",
@@ -345,7 +345,7 @@
     {
       "id": 11,
       "nombre": "PUBG Mobile",
-      "imagen": "https://www.pubgmobile.com/images/event/home/pubgm_home_bg.jpg",
+      "imagen": "https://play-lh.googleusercontent.com/un5n8qOi9ylhMdrb3Ti2mEZEr4DmxoVqugQn4WfaVD_oa7QskWj7m2buovFqCTq2hQ=w240-h480-rw",
       "categoria": "Battle Royale",
       "desarrollador": "PUBG Corporation",
       "fechaLanzamiento": "2018-03-19",
@@ -447,7 +447,7 @@
     {
       "id": 14,
       "nombre": "NBA 2K24",
-      "imagen": "https://nba2k24.2k.com/assets/images/nba2k24-kobe-bg.jpg",
+      "imagen": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2609/4e2470cab2b54eb6d69bada84bac6d65df090605cfc16ee6.jpg",
       "categoria": "Sports",
       "desarrollador": "Visual Concepts",
       "fechaLanzamiento": "2023-09-08",
@@ -481,7 +481,7 @@
     {
       "id": 15,
       "nombre": "Mobile Legends",
-      "imagen": "https://play-lh.googleusercontent.com/Qxcg8RNAS9l_VUxHNPifSKHq0FRCPaVZCETd1jUPxFPf0fBBKEEtQZsJx2fH-K1yFg",
+      "imagen": "https://play-lh.googleusercontent.com/QXCVbZd0d71ho4MIYHHxnY6BJFGXI-fzRS5MXJXU1n4n2T-VdQgB1vrdJpydokA34UA",
       "categoria": "MOBA",
       "desarrollador": "Moonton",
       "fechaLanzamiento": "2016-07-14",
@@ -511,7 +511,28 @@
         "https://play-lh.googleusercontent.com/screenshot2.jpg"
       ],
       "tags": ["MOBA", "Mobile", "5v5", "Estrategia"]
+    },
+    {
+      "id": 16,
+      "nombre": "Gran Turismo 7",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/09/gran-turismo-7-2466585.jpg?tf=3840x",
+      "categoria": "Sports",
+      "desarrollador": "Polyphony Digital",
+      "plataformas": ["PlayStation", "PC"],
+      "precio": 69.99,
+      "rating": 4.5
+    },
+    {
+      "id": 17,
+      "nombre": "The Legend of Zelda: Breath of the Wild",
+      "imagen": "https://media.gq.com/photos/58c9b8e5ca736630b47208c5/16:9/w_2560%2Cc_limit/BOTW-Share_icon.jpg",
+      "categoria": "Adventure",
+      "desarrollador": "Nintendo EPD",
+      "plataformas": ["Nintendo Switch"],
+      "precio": 59.99,
+      "rating": 4.9
     }
+
   ],
   "categorias": [
     {
@@ -555,6 +576,13 @@
       "icono": "bi-trophy",
       "descripcion": "Juegos deportivos con simulación realista de diferentes disciplinas",
       "color": "#4ecdc4"
+    },
+    {
+    "id": "adventure",
+    "nombre": "Adventure",
+    "icono": "bi-compass",
+    "descripcion": "Juegos de aventura y exploración con narrativas épicas",
+    "color": "#9b59b6"
     }
   ]
 }

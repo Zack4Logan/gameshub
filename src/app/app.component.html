@@ -5,11 +5,11 @@
       <i class="bi bi-controller me-2"></i>
       GameHub
     </a>
-    <button 
-      class="navbar-toggler" 
-      type="button" 
+    <button
+      class="navbar-toggler"
+      type="button"
       (click)="isNavbarCollapsed = !isNavbarCollapsed"
-      [attr.aria-expanded]="!isNavbarCollapsed" 
+      [attr.aria-expanded]="!isNavbarCollapsed"
       aria-controls="navbarContent"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,6 +29,11 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/categorias" routerLinkActive="active">
             <i class="bi bi-grid-3x3-gap me-1"></i> Categorías
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/estadisticas" routerLinkActive="active">
+            <i class="bi bi-graph-up"></i> Estadísticas
           </a>
         </li>
       </ul>
@@ -58,7 +63,7 @@
         <ul class="list-unstyled">
           <li class="mb-2"><a routerLink="/juegos">Todos los Juegos</a></li>
           <li class="mb-2"><a routerLink="/categorias">Categorías</a></li>
-          <li class="mb-2"><a href="#">Nuevos Lanzamientos</a></li>
+          <li class="mb-2"><a routerLink="/estadisticas">Estadísticas</a></li>
           <li class="mb-2"><a href="#">Más Populares</a></li>
         </ul>
       </div>
